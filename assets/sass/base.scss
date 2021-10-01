@@ -1,4 +1,38 @@
-body{
-    background-color: #f5f5f5;
-    color: red;
+@import 'test-file';
+
+/*  var   */
+
+$color-bg: #f5f5f5;
+$color-nav: black;
+$color-text-default: tomato; 
+$color-text-nav: #f5f5f5;
+$border-default: 2px;
+
+
+nav{
+    background-color: $color-nav;
+    color: $color-text-default;
+
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 30px;
+
+        li{
+            display: inline-block;
+            margin: 0px 20px;
+
+             a{
+                color: $color-text-nav;
+                display:block;
+                padding: 10px;
+                text-decoration: none;
+                background-color: 999;
+                border: $border-default solid $color-text-default;
+            }
+
+        }
+       
+    }
+
 }
