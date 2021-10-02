@@ -45,9 +45,6 @@ nav ul li a:hover {
   -moz-transform: rotate(5deg);
   -ms-transform: rotate(5deg);
 }
-nav ul li a:hover a {
-  font-size: 24px;
-}
 
 /*  grupo de propriedades  */
 .msg-info, .msg-alert, .msg-sucess {
