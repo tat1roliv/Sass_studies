@@ -30,18 +30,23 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin: 0px 20px;
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
 }
 nav ul li a {
   color: #f5f5f5;
   display: block;
   padding: 10px;
   text-decoration: none;
-  background-color: 999;
   border: 2px solid tomato;
+}
+nav ul li a:hover {
+  background-color: tomato;
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+}
+nav ul li a:hover a {
+  font-size: 24px;
 }
 
 /*  grupo de propriedades  */
@@ -119,30 +124,30 @@ nav ul li a {
 
 .id-4 {
   font-weight: light;
-  color: darkcyan;
+  color: darkblue;
 }
 
 .id-5 {
   font-weight: light;
-  color: darkcyan;
+  color: darkblue;
 }
 
 .id-6 {
   font-weight: light;
-  color: darkcyan;
+  color: darkblue;
 }
 
 .id-7 {
   font-weight: light;
-  color: darkcyan;
+  color: darkblue;
 }
 
 .id-8 {
   font-weight: light;
-  color: darkcyan;
+  color: darkblue;
 }
 
 .id-9 {
   font-weight: light;
-  color: darkcyan;
+  color: darkblue;
 }

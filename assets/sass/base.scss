@@ -30,15 +30,18 @@ nav{
             display: inline-block;
             margin: 0px 20px;
 
-            @include rotacionar(180deg);
-
              a{
                 color: $color-text-nav;
                 display:block;
                 padding: 10px;
                 text-decoration: none;
-                background-color: 999;
                 border: $border-default solid $color-text-default;
+
+                &:hover{
+                    background-color: $color-text-default;
+                    @include rotacionar(5deg);
+                }
+
             }
 
         }
@@ -119,7 +122,6 @@ $item-width: 100px;
 }
 
 
-
 @for $i from 1 through 9 {
     .id-#{$i} {
         @extend %id-default;
@@ -130,7 +132,7 @@ $item-width: 100px;
         }
         @else{
             font-weight: light;
-            color: darkcyan;
+            color: darkblue;
         }
         
     }
