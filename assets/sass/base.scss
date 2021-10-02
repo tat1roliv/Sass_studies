@@ -30,7 +30,7 @@ nav{
             display: inline-block;
             margin: 0px 20px;
 
-            @include rotacionar(30deg);
+            @include rotacionar(180deg);
 
              a{
                 color: $color-text-nav;
@@ -47,3 +47,31 @@ nav{
 
 }
 
+/*  grupo propriedades  */
+
+%msg-default { 
+    padding: 10px;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    margin: auto;
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+.msg-info{
+    @extend %msg-default;
+    border-color: aqua;
+    color: $color-text-default;
+}
+
+.msg-alert{
+    @extend %msg-default;
+    border-color: red;
+    color: red;
+}
+
+.msg-sucess{
+    @extend %msg-default;
+    border-color: greenyellow;
+    color: greenyellow;
+}
