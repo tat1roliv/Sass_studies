@@ -46,17 +46,18 @@ nav ul li a {
 
 /*  grupo de propriedades  */
 .msg-info, .msg-alert, .msg-sucess {
-  padding: 10px;
+  padding: 5px;
   font-size: 24px;
   border: 1px solid #ccc;
   margin: auto;
-  max-width: 200px;
-  margin-top: 20px;
+  max-width: 400px;
+  margin-top: 5px;
+  text-align: center;
 }
 
 .msg-info {
   border-color: aqua;
-  color: tomato;
+  color: aqua;
 }
 
 .msg-alert {
@@ -72,7 +73,7 @@ nav ul li a {
 /* calc */
 .item, .item-duplo, .item-triplo, .item-metade {
   background-color: #000;
-  height: 40px;
+  height: 20px;
 }
 
 .item {
@@ -89,4 +90,59 @@ nav ul li a {
 
 .item-metade {
   width: 50px;
+}
+
+/* for */
+/* if else */
+.id-1, .id-2, .id-3, .id-4, .id-5, .id-6, .id-7, .id-8, .id-9 {
+  font-size: 12px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  width: 100px;
+}
+
+.id-1 {
+  font-weight: bold;
+  color: crimson;
+}
+
+.id-2 {
+  font-weight: bold;
+  color: crimson;
+}
+
+.id-3 {
+  font-weight: bold;
+  color: crimson;
+}
+
+.id-4 {
+  font-weight: light;
+  color: darkcyan;
+}
+
+.id-5 {
+  font-weight: light;
+  color: darkcyan;
+}
+
+.id-6 {
+  font-weight: light;
+  color: darkcyan;
+}
+
+.id-7 {
+  font-weight: light;
+  color: darkcyan;
+}
+
+.id-8 {
+  font-weight: light;
+  color: darkcyan;
+}
+
+.id-9 {
+  font-weight: light;
+  color: darkcyan;
 }

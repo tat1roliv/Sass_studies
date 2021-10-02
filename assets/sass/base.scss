@@ -51,18 +51,19 @@ nav{
 /*  grupo de propriedades  */
 
 %msg-default { 
-    padding: 10px;
+    padding: 5px;
     font-size: 24px;
     border: 1px solid #ccc;
     margin: auto;
-    max-width: 200px;
-    margin-top: 20px;
+    max-width: 400px;
+    margin-top: 5px;
+    text-align: center;
 }
 
 .msg-info{
     @extend %msg-default;
     border-color: aqua;
-    color: $color-text-default;
+    color: aqua;
 }
 
 .msg-alert{
@@ -81,7 +82,7 @@ nav{
 
 %item { 
     background-color: #000;
-    height: 40px;   
+    height: 20px;   
 }
 
 $item-width: 100px;
@@ -105,3 +106,33 @@ $item-width: 100px;
     @extend %item;
     width: $item-width / 2;
 }
+
+/* for */
+/* if else */
+
+%id-default{
+    font-size: 12px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+}
+
+
+
+@for $i from 1 through 9 {
+    .id-#{$i} {
+        @extend %id-default;
+    
+        @if $i <= 3 {
+            font-weight: bold;
+            color: crimson;
+        }
+        @else{
+            font-weight: light;
+            color: darkcyan;
+        }
+        
+    }
+}
+
