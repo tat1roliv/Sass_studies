@@ -5,6 +5,18 @@ body {
   margin: 0;
 }
 
+/*
+transform => default;
+-webkit-transform => chrome;
+-moz-transform => mozilla;
+-ms-transform => ie /edge;
+
+mixin
+
+@mixin rotacionar($parametros){
+}
+
+*/
 /*  var   */
 nav {
   background-color: black;
@@ -18,6 +30,10 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin: 0px 20px;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
 }
 nav ul li a {
   color: #f5f5f5;

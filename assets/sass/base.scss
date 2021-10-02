@@ -1,5 +1,13 @@
 @import 'test-file';
 
+
+@mixin rotacionar($graus){
+    transform:rotate($graus);
+    -webkit-transform:rotate($graus);
+    -moz-transform:rotate($graus);
+    -ms-transform:rotate($graus);
+}
+
 /*  var   */
 
 $color-bg: #f5f5f5;
@@ -22,6 +30,8 @@ nav{
             display: inline-block;
             margin: 0px 20px;
 
+            @include rotacionar(30deg);
+
              a{
                 color: $color-text-nav;
                 display:block;
@@ -36,3 +46,4 @@ nav{
     }
 
 }
+
