@@ -47,7 +47,8 @@ nav{
 
 }
 
-/*  grupo propriedades  */
+
+/*  grupo de propriedades  */
 
 %msg-default { 
     padding: 10px;
@@ -74,4 +75,33 @@ nav{
     @extend %msg-default;
     border-color: greenyellow;
     color: greenyellow;
+}
+
+/* calc */
+
+%item { 
+    background-color: #000;
+    height: 40px;   
+}
+
+$item-width: 100px;
+
+.item{
+    @extend %item;
+    width: $item-width ;
+}
+
+.item-duplo{
+    @extend %item;
+    width: $item-width * 2;
+}
+
+.item-triplo{
+    @extend %item;
+    width: $item-width * 3;
+}
+
+.item-metade{
+    @extend %item;
+    width: $item-width / 2;
 }

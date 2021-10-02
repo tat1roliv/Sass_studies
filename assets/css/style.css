@@ -44,7 +44,7 @@ nav ul li a {
   border: 2px solid tomato;
 }
 
-/*  grupo propriedades  */
+/*  grupo de propriedades  */
 .msg-info, .msg-alert, .msg-sucess {
   padding: 10px;
   font-size: 24px;
@@ -67,4 +67,26 @@ nav ul li a {
 .msg-sucess {
   border-color: greenyellow;
   color: greenyellow;
+}
+
+/* calc */
+.item, .item-duplo, .item-triplo, .item-metade {
+  background-color: #000;
+  height: 40px;
+}
+
+.item {
+  width: 100px;
+}
+
+.item-duplo {
+  width: 200px;
+}
+
+.item-triplo {
+  width: 300px;
+}
+
+.item-metade {
+  width: 50px;
 }
